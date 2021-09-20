@@ -1,0 +1,74 @@
+body {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  width: 100%;
+  border: 1px solid lime;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  border-radius: 100;
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(
+    135deg,
+    rgb(255, 0, 186) 0%,
+    rgb(250, 231, 19) 100%
+  );
+  /*   display: flex; */
+  /*   align-items: center; */
+  /*   justify-content: center; */
+  transform: translateZ(30px) translateX(-50%) translateY(-50%);
+  will-change: transform;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+
+  /*   width:70%; */
+  padding: 20px;
+  /*     background:#fff; */
+  margin: 20px auto 60px;
+  border-radius: 2px;
+}
+
+img {
+  position: relative;
+  width: 150%;
+  top: 60%;
+  left: 50%;
+  transform: translateZ(30px) translateX(-50%) translateY(-50%);
+  boder-radius: 100%;
+}
+
+.css3-shadow {
+  position: relative;
+  /*     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3); */
+  /*     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3); */
+}
+/*==================================================
+ * Drop shadow effect with box-shadow
+ * ===============================================*/
+.css3-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.9);
+  /*     box-shadow:0 0 40px rgba(0,0,0,0.8); */
+  bottom: 0px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 50%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}

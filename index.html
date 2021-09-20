@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Tilty-mon</title>
+  </head>
+  <!-- // Tilty-mon -->
+    <body>
+  <!--     sources:
+    1. Resilient Coders - Boston MA  <3
+    2. Raise.dev - Queens NY c:
+    3. Vanilla Tilt JS: https://micku7zu.github.io/vanilla-tilt.js/index.html
+    4. Make Round box shadows: https://www.prowebdesign.ro/round-brush-like-responsive-drop-shadows-with-css3-and-no-images/ -->
+      <section class="container">
+  <!--       // PIKACHU -->
+        <div id="box-tilt" class="box css3-shadow" data-tilt transform-style: preserve-3d transform: perspective(1000px);>
+          <img id="poke-tilt" transform: translateZ(20px src="https://pngimg.com/uploads/pokeball/pokeball_PNG29.png" alt="">
+          <img class="pikachu pokemon hidden" src="http://www.pearltrees.com/s/pic/or/pikachu-render-2-100866637" alt="">
+        </div>
+  <!--       // Charmander -->
+        <div id="box-tilt" class="box css3-shadow" data-tilt transform-style: preserve-3d transform: perspective(1000px);>
+          <img id="poke-tilt" transform: translateZ(20px src="https://pngimg.com/uploads/pokeball/pokeball_PNG29.png" alt="">
+          <img class="charmander pokemon hidden" src="https://bjambis.com/images/drawing-squirtle-charmander.png" alt="">
+        </div>
+  <!--       // Bulbasaur -->
+        <div id="box-tilt" class="box css3-shadow test" data-tilt transform-style: preserve-3d transform: perspective(1000px);>
+          <img id="poke-tilt" transform: translateZ(20px src="https://pngimg.com/uploads/pokeball/pokeball_PNG29.png" alt="">
+          <img class="bulbasaur pokemon hidden" src="https://orig11.deviantart.net/a3ce/f/2012/301/e/6/bulbasaur_mustache_art_trade_by_happysmoothieo3o-d5j7g79.png" alt="">
+        </div>
+  <!--       //Squirtle -->
+        <div id="box-tilt" class="box css3-shadow" data-tilt transform-style: preserve-3d transform: perspective(1000px);>
+          <img id="poke-tilt" transform: translateZ(20px src="https://pngimg.com/uploads/pokeball/pokeball_PNG29.png" alt="">
+          <img class="squirtle pokemon hidden" src="https://clipartsworld.com/images/squirtle-clipart-11.png" alt="">
+        </div>
+   </section>
+
+
+
+  <!-- Tilt js library and settings: -->
+      <script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script type="text/javascript">
+    	  VanillaTilt.init(document.getElementById("box-tilt"), {
+          max: 10,
+          speed: 500
+        });
+        // <!-- Footer Logo Tilt -->
+        VanillaTilt.init(document.getElementById("poke-tilt"), {
+          max: 20,
+          speed: 300
+    	  });
+    </script>
+
+    <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>

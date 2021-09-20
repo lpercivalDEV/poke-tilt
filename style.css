@@ -1,10 +1,13 @@
 body {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url("./pokebg.png");
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
+  margin-top: 26%;
   width: 100%;
-  border: 1px solid lime;
   display: flex;
   justify-content: space-between;
 }

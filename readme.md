@@ -4,4 +4,4 @@ Just having fun playing around with Tilt JS and pokemon. See which pokemon you g
 
 Live Demo:
 
-![Demo](https://lpercivaldev.github.io/poke-tilt/)
+[Demo Link](https://lpercivaldev.github.io/poke-tilt/)
